@@ -1,5 +1,6 @@
 <?php
 
+
 return [
     'version' => class_exists('\PackageVersions\Versions') 
         ? explode('@', \PackageVersions\Versions::getVersion('jhin1m/mangacore') ?? '1.0.0')[0] 
@@ -8,7 +9,7 @@ return [
     // Legacy episode configuration (for backward compatibility)
     'episodes' => [
         'types' => [
-            'embed' => 'Nhúng',
+            'embed' => '_Gömülü_',
             'mp4' => 'MP4',
             'm3u8' => 'M3U8'
         ]
@@ -23,10 +24,10 @@ return [
             'webtoon' => 'Webtoon'
         ],
         'statuses' => [
-            'ongoing' => 'Đang tiến hành',
-            'completed' => 'Hoàn thành',
-            'hiatus' => 'Tạm ngưng',
-            'cancelled' => 'Đã hủy'
+            'ongoing' => '_Devam ediyor_',
+            'completed' => '_Tamamlandı_',
+            'hiatus' => '_Ara verildi_',
+            'cancelled' => '_İptal edildi_'
         ],
         'demographics' => [
             'shounen' => 'Shounen',
@@ -34,18 +35,18 @@ return [
             'josei' => 'Josei',
             'shoujo' => 'Shoujo',
             'kodomomuke' => 'Kodomomuke',
-            'general' => 'Tổng quát'
+            'general' => '_Genel_'
         ],
         'reading_directions' => [
-            'ltr' => 'Trái sang phải',
-            'rtl' => 'Phải sang trái',
-            'vertical' => 'Dọc (Webtoon)'
+            'ltr' => '_Soldan sağa_',
+            'rtl' => '_Sağdan sola_',
+            'vertical' => '_Dikey (Webtoon)_'
         ],
         'reading_modes' => [
-            'single' => 'Trang đơn',
-            'double' => 'Trang đôi',
-            'vertical' => 'Cuộn dọc',
-            'horizontal' => 'Vuốt ngang'
+            'single' => '_Tek sayfa_',
+            'double' => '_Çift sayfa_',
+            'vertical' => '_Dikey kaydırma_',
+            'horizontal' => '_Yatay kaydırma_'
         ]
     ],
     
@@ -81,15 +82,15 @@ return [
         ]
     ],
     'image_processing' => [
-        'default_quality' => 'medium',
+        'default_quality' => '_orta_',
         'generate_webp' => true,
         'generate_thumbnails' => true,
         'max_file_size' => 10 * 1024 * 1024, // 10MB
         'supported_formats' => ['jpg', 'jpeg', 'png', 'gif', 'webp', 'bmp', 'tiff'],
         'quality_settings' => [
-            'low' => 60,
-            'medium' => 80,
-            'high' => 95
+            'low' => '_düşük_',
+            'medium' => '_orta_',
+            'high' => '_yüksek_'
         ],
         'dimensions' => [
             'page' => ['width' => 1600, 'height' => 2400],
